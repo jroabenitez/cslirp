@@ -1,0 +1,12 @@
+    <div>
+        <h1><a href="/">Recursos Humanos</a></h1>
+    </div>
+<table >
+	<tr><th>Documento <th>Apellidos<th>Nombres
+	{%for d in strrhh%}
+		<tr>
+			<td>{{d.strh_documento}}
+			<td>{{d.strh_papell}}  {%if .strh_sapell%}{{d.strh_sapell}}{%endif%}
+			<td>{{d.strh_pnombre}} {%if .strh_snombre%}{{d.strh_snombre}}{%endif%}
+	{%endfor%}
+</table>
